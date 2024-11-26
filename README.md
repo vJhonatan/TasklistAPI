@@ -14,5 +14,3 @@ TaskListAPI é uma API backend construída com **ASP.NET Core** para gerenciar t
 - **GET** `/api/task` - Listar todas as tarefas.
 - **GET** `/api/task/{id}` - Buscar uma tarefa pelo ID.
 - **DELETE** `/api/task/{id}` - Excluir uma tarefa pelo ID.
-
-Essa API foi projetada para fornecer suporte completo ao gerenciamento de tarefas no aplicativo React Native.
