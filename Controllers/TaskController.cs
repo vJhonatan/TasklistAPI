@@ -17,6 +17,8 @@ namespace TaskListAPI.Controllers
         {   
             if (newTask.Description.Length < 10) return BadRequest("The description must be at least 10 characters long.");
 
+            newTask.Id = tasks.Count > 0 ? tasks[tasks.Count - 1].Id + 1 : 1;
+
             tasks.Add(newTask);
 
             return Ok(tasks);
